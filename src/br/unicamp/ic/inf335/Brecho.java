@@ -37,14 +37,14 @@ public class Brecho {
 			System.out.println("Codigo = " + produtos.get(i).getCodigo() + " Nome = " + produtos.get(i).getNome() + " Valor = " + produtos.get(i).getValor());
 		}
 		
-		// Calcula Média
+		// Calcula Media
 		Double media = 0.0;
-		int i = 1;
-		while (i<=produtos.size()) {
-			media = produtos.get(i).getValor();
+		int i = 0;
+		while (i < produtos.size()) {
+			media += produtos.get(i).getValor();
 			i++;
 		}
-		media = media / i;
+		media = media / produtos.size();
 		System.out.println("Media de Valores = " + media);
 	}
 
